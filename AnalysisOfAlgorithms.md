@@ -32,7 +32,7 @@
 
 ## Big-O Notation
 * Formally, the `time complexity T(n)` of an algorithm is `O(f(n)) of the order f(n)` if, for some positive constants C1 and C2 for all but finitely many values of `n`
-`![equation](http://latex.codecogs.com/gif.latex?C_%7B1%7D%20*%20f%28n%29%20%5Cleq%20T%28n%29%20%5Cleq%20C_%7B2%7D%20*%20f%28n%29)`
+![equation](http://latex.codecogs.com/gif.latex?C_%7B1%7D%20*%20f%28n%29%20%5Cleq%20T%28n%29%20%5Cleq%20C_%7B2%7D%20*%20f%28n%29)
 
 * This gives `upper` and `lower bounds` on the amount of work done for all sufficiently large `n`
 
