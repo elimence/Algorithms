@@ -31,7 +31,25 @@
 	* Times through a critical loop etc
 
 ## Big-O Notation
-* Formally, the `time complexity T(n)` of an algorithm is `O(f(n)) `of the order f(n)`` if, for some positive constants C1 and C2 for all but finitely many values of `n`
+* Formally, the `time complexity T(n)` of an algorithm is `O(f(n)) of the order f(n)` if, for some positive constants C1 and C2 for all but finitely many values of `n`
 `C1 * f(n) <= T(n) <= C2 * f(n)
 
-* This gives `upper` and `lower bounds` on the amount of workd done for all sufficiently large `n`
+* This gives `upper` and `lower bounds` on the amount of work done for all sufficiently large `n`
+
+* We wamt am easily recognized elementary function to describe the performance of the algorithm, so we use the `dominant term` of `T(n)`: it determines teh basic `shape` of the function
+
+## Worst Case vs. Average Case
+* Worst case analysis is used to find an upper bound on an algorithm performance for large problems (larn `n`)
+* Average case analysis determines the average (or `expected`) performance
+* Worst case time complexity is usually simpler to work out
+
+## Big-O Analysis in General
+* With independent nested loops: The number of iterations of the inner loop is independent of the number of iterations of the outer loop
+	* `Example`
+	```javascript
+	int x = 0;
+
+	for (int j = 1; j <= n/2; j++)
+		for (int k = 1; k <= n*n; k++)
+			x = x + j + k;
+	```
