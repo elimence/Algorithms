@@ -1,8 +1,8 @@
 # Analysis Of Algorithms
 
 * Efficienty of an algorithm can be measured in terms of:
-  	* Execution time `(time complexity)`
-  	* The amount of memory required `(space complexity)`
+  	* Execution time `time complexity`
+  	* The amount of memory required `space complexity`
 
  * The measure which is most important depends on the limitations of the technology available at time of analysis
 
@@ -32,24 +32,25 @@
 
 ## Big-O Notation
 * Formally, the `time complexity T(n)` of an algorithm is `O(f(n)) of the order f(n)` if, for some positive constants C1 and C2 for all but finitely many values of `n`
-`C1 * f(n) <= T(n) <= C2 * f(n)
+`C1 * f(n) <= T(n) <= C2 * f(n)`
 
 * This gives `upper` and `lower bounds` on the amount of work done for all sufficiently large `n`
 
 * We wamt am easily recognized elementary function to describe the performance of the algorithm, so we use the `dominant term` of `T(n)`: it determines teh basic `shape` of the function
 
 ## Worst Case vs. Average Case
-* Worst case analysis is used to find an upper bound on an algorithm performance for large problems (larn `n`)
+* Worst case analysis is used to find an upper bound on an algorithm performance for large problems (large `n`)
 * Average case analysis determines the average (or `expected`) performance
 * Worst case time complexity is usually simpler to work out
 
 ## Big-O Analysis in General
 * With independent nested loops: The number of iterations of the inner loop is independent of the number of iterations of the outer loop
 	* `Example`
-	```javascript
-	int x = 0;
+	
+```js
+int x = 0;
 
-	for (int j = 1; j <= n/2; j++)
-		for (int k = 1; k <= n*n; k++)
-			x = x + j + k;
-	```
+for (int j = 1; j <= n/2; j++)
+	for (int k = 1; k <= n*n; k++)
+		x = x + j + k;
+```
