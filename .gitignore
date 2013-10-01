@@ -3,6 +3,7 @@
 
 *.swp
 *.swo
+*~
 
 # sbt specific
 dist/*

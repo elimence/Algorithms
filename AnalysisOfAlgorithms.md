@@ -47,10 +47,10 @@
 * With independent nested loops: The number of iterations of the inner loop is independent of the number of iterations of the outer loop
 	* `Example`
 	
-```js
-int x = 0;
+	```javascript
+	int x = 0;
 
-for (int j = 1; j <= n/2; j++)
-	for (int k = 1; k <= n*n; k++)
-		x = x + j + k;
-```
+	for (int j = 1; j <= n/2; j++)
+		for (int k = 1; k <= n*n; k++)
+			x = x + j + k;
+	```
