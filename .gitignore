@@ -1,6 +1,9 @@
 *.class
 *.log
 
+*.swp
+*.swo
+
 # sbt specific
 dist/*
 target/
