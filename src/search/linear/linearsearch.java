@@ -1,3 +1,4 @@
+package search.linearsearch;
 
 public class linearsearch {
 	private int[] data;
