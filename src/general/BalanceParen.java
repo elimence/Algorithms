@@ -9,7 +9,7 @@ import java.util.*;
 public class BalanceParen {
 
   public static void main(String[] args) {
-    System.out.println(isBalanced("([]{}([(]))"));
+    System.out.println(isBalanced(")))))"));
   }
   
   private static boolean isBalanced(String input) {
