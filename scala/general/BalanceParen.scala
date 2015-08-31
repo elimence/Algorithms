@@ -5,7 +5,7 @@ import scala.collection.immutable.HashMap
 
 object BalanceParen {
 	def main(args: Array[String]) {
-		args map { (str: String) => println(str+ " : "+ isBalanced(str)) }
+		args map { str => println(s"$str : ${isBalanced(str)}") }
 	}
 	def isBalanced(input: String): Boolean = {
 		val stack = new Stack[Char]
